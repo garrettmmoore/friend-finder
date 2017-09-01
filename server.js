@@ -9,7 +9,12 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+
+
 // Sets up the Express app to handle data parsing
+app.use(express.static('public'));
+app.use(express.static('files'));
+app.use('/static', express.static('public'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
