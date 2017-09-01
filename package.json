@@ -1,0 +1,29 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "Application for matching to friends",
+  "main": "server.js",
+  "scripts": {
+    "test": "Friend match success"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garrettmmoore/friend-finder.git"
+  },
+  "keywords": [
+    "Friend",
+    "Finder"
+  ],
+  "author": "Garrett Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garrettmmoore/friend-finder/issues"
+  },
+  "homepage": "https://github.com/garrettmmoore/friend-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "path": "^0.12.7",
+    "save": "^2.3.1"
+  }
+}
