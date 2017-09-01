@@ -10,13 +10,11 @@ module.exports = function(app) {
 
       friendsData.push(req.body);
       res.json(true);
-
   });
 
   app.post("/api/clear", function() {
 
     friendsData = [];
-
     console.log(friendsData);
   });
 };
