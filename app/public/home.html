@@ -3,19 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Friend Finder</title>
-    <!-- Latest compiled and minified CSS -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="..\..\font-awesome-4.7.0\css\font-awesome.min.css">
+    <!-- BootStrap and jQuery-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Google Font and Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="\font-awesome-4.7.0\css\font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
+
+<!-- ************************* CSS ********************************** -->
+<style>
+html {
+    position: relative;
+    min-height: 100%;
+  }
+body{
+ background-color: #192ca8;
+ margin-bottom: 80px;
+ font-family: 'PT Serif', serif;
+}
+.headerText{
+    margin-top: 300px;
+    color: #e65a73;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 45px;
+}
+.subHeaderText{
+    color: #f5f5f5;
+    text-align: center;
+}
+.createProfile{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.surveyText{
+    color: #e65a73;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.extraLinks {
+    color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+a:hover {
+    color: #e65a73;
+}
+a:active {
+    color: #f5f5f5;
+}
+.formQuestion{
+    color: #e65a73;
+    text-align: left;
+    font-size: 22px;
+}
+.formQuestion2{
+    color: #f5f5f5;
+    text-align: left;
+    font-size: 18px;
+}
+.formAnswer{
+    color: #f5f5f5;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+.submitButton{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.container .social-icons{
+      margin: 30px 0;
+}
+</style>
+
+<!-- ************************* HTML ********************************** -->
+
 <body>
     <nav class="navbar sticky-top navbar-light justify-content-between">
-            <a class="navbar-brand" href="/home">
-                <i class="fa fa-handshake-o fa-4x"></i>
-                <h2>Friend Finder</h2>
-            </a>      
+        <a class="navbar-brand" href="/home">
+            <i class="fa fa-handshake-o fa-4x"></i>
+            <h2>Friend Finder</h2>
+        </a>      
     </nav>
     <div class = "container homeBack">
         <div class = "row">
@@ -38,27 +122,27 @@
         </div>
         <div class = "row">
             <div class="container extraLinks">
-                    <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/garrettmmoore/friend-finder">GitHub Repo</a></p>
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/garrettmmoore/friend-finder">GitHub Repo</a></p>
             </div>
         </div>
     </div>
     <footer class="footer">
-            <div class="container">
-                <div class = "row">
-                    <div class = "col-xs-12  social-icons ">
-                        <div class = "col-xs-1 col-xs-offset-2">
-                            <i class="fa fa-github fa-2x"></i>
-                        </div>
-                        <div class = "col-xs-2 col-xs-offset-3">
-                            <i class="fa fa-linkedin-square fa-2x "></i>
-                        </div>
-                        <div class = "col-xs-1 col-xs-offset-2 ">
-                            <i class="fa fa-stack-overflow fa-2x"></i>
-                        </div>
+        <div class="container">
+            <div class = "row">
+                <div class = "col-xs-12  social-icons ">
+                    <div class = "col-xs-1 col-xs-offset-2">
+                        <i class="fa fa-github fa-2x"></i>
+                    </div>
+                    <div class = "col-xs-2 col-xs-offset-3">
+                        <i class="fa fa-linkedin-square fa-2x "></i>
+                    </div>
+                    <div class = "col-xs-1 col-xs-offset-2 ">
+                        <i class="fa fa-stack-overflow fa-2x"></i>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 </html>
 
